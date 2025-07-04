@@ -638,7 +638,46 @@ header
   }
 
 
-  
+  @media (max-width: 767px) {
+  .header-area .main-nav {
+    position: relative;
+  }
+
+  .header-area .main-nav .nav {
+    position: absolute;
+    top: 70px; /* below the header */
+    right: 0;
+    width: 100%;
+    background-color: #222;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 20px;
+    z-index: 98;
+  }
+
+  .header-area .main-nav .nav.open {
+    display: flex; /* show when triggered */
+  }
+
+  .header-area .main-nav .nav li {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .header-area .main-nav .nav li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+  }
+
+  .menu-trigger {
+    display: block !important;
+  }
+}
+
 
  
 

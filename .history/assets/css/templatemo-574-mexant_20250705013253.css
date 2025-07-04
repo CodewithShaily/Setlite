@@ -536,6 +536,7 @@ header
   -ms-transform-origin: 33% 100%;
   -webkit-transform-origin: 33% 100%;
   transform-origin: 33% 100%;
+  
   z-index: 10;
 }
 
@@ -545,7 +546,7 @@ header
   -webkit-transform-origin: 33% 0;
   transform-origin: 33% 0;
   top: 10px;
-  
+  transform: rotate(-45deg);
 }
 
 .header-area .main-nav .menu-trigger.active span,

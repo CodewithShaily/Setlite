@@ -536,6 +536,8 @@ header
   -ms-transform-origin: 33% 100%;
   -webkit-transform-origin: 33% 100%;
   transform-origin: 33% 100%;
+  transform: rotate(45deg);
+  top: 0px;
   z-index: 10;
 }
 
@@ -545,7 +547,7 @@ header
   -webkit-transform-origin: 33% 0;
   transform-origin: 33% 0;
   top: 10px;
-  
+  transform: rotate(-45deg);
 }
 
 .header-area .main-nav .menu-trigger.active span,
@@ -638,7 +640,39 @@ header
   }
 
 
-  
+  @media (max-width: 767px) {
+  .header-area .main-nav .nav {
+    position: absolute;
+    top: 70px; /* just below header */
+    right: 0;
+    left: auto; /* important override */
+    width: 100%;
+    background-color: #222;
+    display: none; /* initially hidden */
+    flex-direction: column;
+    align-items: flex-end; /* align items to right */
+    padding: 10px 20px;
+    z-index: 98;
+  }
+
+  .header-area .main-nav .nav li {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .header-area .main-nav .nav li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+  }
+
+  .header-area .main-nav .nav.open {
+    display: flex; /* show when triggered */
+  }
+}
+
 
  
 

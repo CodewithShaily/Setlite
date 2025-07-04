@@ -450,12 +450,6 @@ header
   transition-delay: 0s, 0s, 0.3s;
 }
 
-.menu-trigger {
-  left: auto !important;
-  right: 20px !important;
-}
-
-
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
@@ -482,18 +476,10 @@ header
   transition: all 0.4s;
   background-color: #fff;
   display: block;
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 2px;
   left: 0;
-}
-
-.header-area .main-nav .menu-trigger span:before {
-  top: -10px;
-}
-
-.header-area .main-nav .menu-trigger span:after {
-  top: 10px;
 }
 
 .background-header .main-nav .menu-trigger span,
@@ -536,6 +522,7 @@ header
   -ms-transform-origin: 33% 100%;
   -webkit-transform-origin: 33% 100%;
   transform-origin: 33% 100%;
+  top: -10px;
   z-index: 10;
 }
 
@@ -545,7 +532,6 @@ header
   -webkit-transform-origin: 33% 0;
   transform-origin: 33% 0;
   top: 10px;
-  
 }
 
 .header-area .main-nav .menu-trigger.active span,
@@ -636,9 +622,6 @@ header
   .header-area .container {
     padding: 0;
   }
-
-
-  
 
  
 
