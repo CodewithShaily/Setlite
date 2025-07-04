@@ -374,7 +374,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fdfdfd;
+  color: #940600;
   opacity: 1;
 }
 
@@ -574,7 +574,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #f4f3f2;
+  color: #ffc107;
 }
 
 .header-area {
