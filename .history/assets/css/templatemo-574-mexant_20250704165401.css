@@ -338,7 +338,7 @@ header
 .header-area .main-nav .nav li:last-child a {
   font-size: 14px;
   color: #fff;
-  background-color: #bda33e;
+  background-color: #ffc107;
   padding: 10px 20px !important;
   display: inline-block;
   border-radius: 5px;
@@ -374,7 +374,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #940600;
+  color: #fdfdfd;
   opacity: 1;
 }
 
@@ -574,7 +574,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ffffff;
+  color: #f4f3f2;
 }
 
 .header-area {
@@ -854,7 +854,22 @@ banner
   top: 0;
   background-size: cover;
   background-position: center;
+  z-index: 1
 }
+
+.slide-inner .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3; /* adjust darkness here */
+  z-index: 2;
+}
+
+
 
 .swiper-slide-active h2 {
   animation: fadeInLeft .8s;
@@ -896,7 +911,7 @@ banner
   position: relative;
   z-index: 2;
   font-size: 56px;
-  color: #fff;
+  color: #ffc107;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
@@ -908,14 +923,14 @@ banner
   width: 80px;
   height: 6px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #ffc107;
   margin-bottom: 40px;
   opacity: 1;
   visibility: visible;
 }
 
 .slide-inner .header-text p {
-  color: #fff;
+  color: #ffc107;
   margin-right: 60px;
   margin-bottom: 50px;
   opacity: 1;
