@@ -629,7 +629,7 @@ header
   .header-area {
     background-color: #f7f7f7;
     padding: 0 15px;
-    height: 70px;
+    height: 100px;
     box-shadow: none;
     text-align: center;
   }
@@ -643,13 +643,11 @@ header
     width: 30px;
     height: auto;
     margin-top: 10px;
-    margin-right: 8px; /* Spacing between logo and text */
-    margin-left: 15px;
   }
 
   .logo-text {
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 8px;
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
@@ -779,7 +777,11 @@ header
 
 /* Responsive styles for small screens */
 @media (max-width: 767px) {
-  
+  .logo-img {
+    height: 40px;         /* smaller logo */
+    margin-left: 8px;     /* spacing from nav edge */
+    margin-right: 8px;    /* spacing between logo and text */
+  }
 
   .logo-text {
     font-size: 14px;      /* smaller text */
@@ -805,18 +807,16 @@ header
 @media (max-width: 767px) {
   /* Resize the logo image correctly */
   .main-nav .logo img {
-    height: 30px;
-    margin-top: -4px; /* moves it higher */
-    margin-left: 25px;
-    margin-right: 0px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+    margin-top: 10px;
   }
 
   /* Resize the logo text */
   .logo-text {
-    font-size: 10px;
-    color: #ffffff;
+    font-size: 14px;
+    color: #1e1e1e;
   }
 
   /* Flex align logo and text */

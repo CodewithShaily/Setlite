@@ -649,7 +649,7 @@ header
 
   .logo-text {
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 15px;
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
@@ -807,15 +807,13 @@ header
   .main-nav .logo img {
     height: 30px;
     margin-top: -4px; /* moves it higher */
-    margin-left: 25px;
+    margin-left: 18px;
     margin-right: 0px;
-    border-radius: 50%;
-    object-fit: cover;
   }
 
   /* Resize the logo text */
   .logo-text {
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff;
   }
 

@@ -649,7 +649,7 @@ header
 
   .logo-text {
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 15px;
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
@@ -815,7 +815,7 @@ header
 
   /* Resize the logo text */
   .logo-text {
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff;
   }
 
