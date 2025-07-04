@@ -370,7 +370,10 @@ header
   padding-left: 25px !important;
 }
 
-
+.header-area .main-nav .nav li:hover a,
+.header-area .main-nav .nav li a.active {
+  color: #940600;
+}
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
@@ -574,7 +577,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ffffff;
+  color: #940600;
 }
 
 .header-area {
@@ -763,10 +766,8 @@ header
 }
 
 .logo-img {
-  height: 60px;
+  height: 70px;
   margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .logo-text {

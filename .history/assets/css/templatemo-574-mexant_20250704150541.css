@@ -126,12 +126,12 @@ body {
 }
 
 ::selection {
-  background: #940600;
+  background: #ff511a;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #940600;
+  background: #ff511a;
   color: #fff;
 }
 
@@ -171,7 +171,7 @@ body {
 .orange-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #940600;
+  background-color: #ff511a;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -200,7 +200,7 @@ section {
 .section-heading h6 {
   font-size: 16px;
   text-transform: uppercase;
-  color: #940600;
+  color: #ff511a;
   font-weight: 700;
 }
 
@@ -370,11 +370,14 @@ header
   padding-left: 25px !important;
 }
 
-
+.header-area .main-nav .nav li:hover a,
+.header-area .main-nav .nav li a.active {
+  color: #ff511a;
+}
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #940600;
+  color: #ff511a;
   opacity: 1;
 }
 
@@ -434,7 +437,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #940600!important;
+  color: #ff511a!important;
   padding-left: 25px;
 }
 
@@ -574,7 +577,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ffffff;
+  color: #ff511a;
 }
 
 .header-area {
@@ -700,12 +703,12 @@ header
 
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #940600 !important;
+    color: #ff511a !important;
   }
 
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #940600 !important;
+    color: #ff511a !important;
     opacity: 1;
   }
 
@@ -763,10 +766,8 @@ header
 }
 
 .logo-img {
-  height: 60px;
+  height: 70px;
   margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .logo-text {
@@ -803,31 +804,46 @@ header
 
 
 
+/* Mobile Styles */
 @media (max-width: 767px) {
-  /* Resize the logo image correctly */
-  .main-nav .logo img {
-    height: 30px;
-    margin-top: -4px; /* moves it higher */
-    margin-left: 25px;
-    margin-right: 0px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  /* Resize the logo text */
-  .logo-text {
-    font-size: 10px;
-    color: #ffffff;
-  }
-
-  /* Flex align logo and text */
-  .main-nav .logo {
+  /* Main logo container - center alignment */
+  .logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    line-height: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Logo image */
+  .logo-img {
+    height: 30px;
+    width: auto;
+    margin-right: 6px;
+    object-fit: contain;
+  }
+
+  /* Logo text */
+  .logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+
+  /* Ensure nav aligns center */
+  .header-area .main-nav {
+    text-align: center;
+  }
+
+  .header-area .main-nav .logo {
+    margin: 0 auto;
   }
 }
+
 
 
 /* 
@@ -924,7 +940,7 @@ banner
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color: #940600;
+  color: #ff511a;
 }
 
 .slide-inner .header-text .buttons {
@@ -941,7 +957,7 @@ banner
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #940600 !important;
+  color: #fff !important;
 }
 
 /*
@@ -1014,7 +1030,7 @@ section.simple-cta h4 em {
 }
 
 section.simple-cta h4 strong {
-  color: #940600;
+  color: #ff511a;
   font-weight: 700;
 }
 
@@ -1075,7 +1091,7 @@ section.about-us .naccs .menu div {
 }
 
 section.about-us .naccs .menu div.active {
-  color: #940600;
+  color: #ff511a;
 }
 
 section.about-us ul.nacc {
@@ -1207,7 +1223,7 @@ section.calculator .section-heading h4 {
 #calculate button.orange-button {
   font-size: 14px;
   color: #fff;
-  background-color: #940600;
+  background-color: #ff511a;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -1305,7 +1321,7 @@ section.testimonials .section-heading {
 }
 
 .testimonials .owl-dots .active {
-  background-color: #940600;
+  background-color: #ff511a;
 }
 
 
@@ -1351,7 +1367,7 @@ footer p {
 }
 
 footer p a {
-  color: #940600;
+  color: #ff511a;
 }
 
 
@@ -1587,7 +1603,7 @@ section.service-details .naccs .menu div {
 }
 
 section.service-details .naccs .menu div.active {
-  color: #940600;
+  color: #ff511a;
 }
 
 section.service-details ul.nacc {
@@ -1823,7 +1839,7 @@ section.map .info-item a {
 }
 
 section.map .info-item a:hover {
-  color: #940600;
+  color: #ff511a;
 }
 
 
