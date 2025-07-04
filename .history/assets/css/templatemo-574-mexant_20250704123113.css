@@ -795,29 +795,6 @@ header
   }
 }
 
-@media (max-width: 767px) {
-  /* Resize the logo image correctly */
-  .main-nav .logo img {
-    width: 30px;
-    height: auto;
-    margin-right: 8px;
-    margin-top: 10px;
-  }
-
-  /* Resize the logo text */
-  .logo-text {
-    font-size: 14px;
-    color: #1e1e1e;
-  }
-
-  /* Flex align logo and text */
-  .main-nav .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 80px;
-  }
-}
 
 
 /* 
