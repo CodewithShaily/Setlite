@@ -846,19 +846,6 @@ banner
   background-position: center;
 }
 
-.swiper-slide-active h2 {
-  animation: fadeInLeft .8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: .3s;
-  opacity: 1;
-}
-
-.swiper-slide-active p {
-  animation: fadeInRight .8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: .3s;
-  opacity: 1;
-}
 
 .swiper-slide-active .div-dec {
   animation: fadeIn .8s;
@@ -925,7 +912,7 @@ banner
 
 .slide-inner .header-text .buttons .green-button {
   display: inline;
-  
+
   float: left;
   margin-right: 20px;
 }

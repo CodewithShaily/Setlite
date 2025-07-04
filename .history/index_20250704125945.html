@@ -168,7 +168,6 @@ demanding needs of our clients.</p>
     </div>
   </footer>
 
-
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -181,30 +180,18 @@ demanding needs of our clients.</p>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-        var interleaveOffset = 0.5;
+      var interleaveOffset = 0.5;
 
       var swiperOptions = {
-        loop: false,
+        loop: true,
         speed: 1000,
-        grabCursor: false,
-        watchSlidesProgress: false,
-        mousewheelControl: false,
-        keyboardControl: false,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+       
         on: {
-          progress: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              var slideProgress = swiper.slides[i].progress;
-              var innerOffset = swiper.width * interleaveOffset;
-              var innerTranslate = slideProgress * innerOffset;
-              swiper.slides[i].querySelector(".slide-inner").style.transform =
-                "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
-          },
+          
           touchStart: function() {
             var swiper = this;
             for (var i = 0; i < swiper.slides.length; i++) {
@@ -224,6 +211,9 @@ demanding needs of our clients.</p>
 
       var swiper = new Swiper(".swiper-container", swiperOptions);
     </script>
-    
+
   </body>
 </html>
+  
+
+  
