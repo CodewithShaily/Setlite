@@ -313,7 +313,7 @@ header
 .header-area .main-nav .nav li {
   /*padding-left: 25px;*/
   padding-right: 25px;
-}
+}*
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
