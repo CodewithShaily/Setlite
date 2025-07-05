@@ -648,7 +648,7 @@ header
     width: 100%;
     display: none;
     transition: all 0s ease 0s;
-  
+    margin-left: 0;
   }
 
   .header-area.header-sticky .nav {
@@ -804,8 +804,8 @@ header
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
-    margin-top: 2px;
-  
+    margin-top: 8px;
+  }
 }
 
 /* ====== Desktop Nav Always Visible (min-width: 767px) ====== */
@@ -816,14 +816,15 @@ header
 }
 
 /* Load this AFTER any plugin CSS */
-@media (min-width: 767px) {
-  .header-area .main-nav .nav {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
+.header-area .main-nav .nav {
+  display: flex !important;        /* override 'display:block'  */
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;         /* ignore any scripted height */
+  overflow: visible !important;    /* let items flow naturally  */
 }
-
 
 
 

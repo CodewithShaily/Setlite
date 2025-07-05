@@ -648,7 +648,7 @@ header
     width: 100%;
     display: none;
     transition: all 0s ease 0s;
-  
+    margin-left: 0;
   }
 
   .header-area.header-sticky .nav {
@@ -801,11 +801,11 @@ header
   .logo-text {
     font-size: 14px;
     font-weight: 600;
+    margin-left: 5px;
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
-    margin-top: 2px;
-  
+  }
 }
 
 /* ====== Desktop Nav Always Visible (min-width: 767px) ====== */
@@ -814,17 +814,6 @@ header
     display: flex !important;
   }
 }
-
-/* Load this AFTER any plugin CSS */
-@media (min-width: 767px) {
-  .header-area .main-nav .nav {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
 
 
 /* Default desktop styles */
